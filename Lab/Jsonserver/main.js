@@ -1,15 +1,7 @@
 var input=document.getElementById('input');
 var add=document.getElementById('add');
-//var table=document.getElementById('table');
-//var tbody=document.getElementById('tbody');
 $(function()
 {
-    /*
-    $("#read").on("click", readHandler);
-    $("#write").on("click", writeHandler);
-    $("#update").on("click", updateHandler);
-    $("#delete").on("click", deleteHandler);
-    */
     add.onclick=function()
     {
         writeHandler(input.value);
@@ -19,8 +11,7 @@ $(function()
 
 function readHandler()
 {
-    //let url="http://localhost:3000/to-do";
-    var url="https://my-json-server-db.azurewebsites.net/to-do"
+    let url="http://localhost:3000/to-do";
     $.getJSON(url)
     .done(function(msg)
     {
