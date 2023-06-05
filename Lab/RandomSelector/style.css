@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+    overflow: hidden;
+    background-size:cover;
+    background-image: url(back.jpg);
+}
+
+img{
+    top:-350px;
+}
+li{ 
+    text-align:left ;
+}
+
+div{
+    background-color:  rgba(244,52,34,0.4);
+    position: absolute;
+    text-align:left ;
+    top:125px;
+}
+font{
+    position: relative;
+    top: px;
+    background-color: aliceblue;
+    text-align:left;
+}

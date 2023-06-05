@@ -1,0 +1,8 @@
+body{text-align: center;
+background: url("Clubback.jpg");
+}
+table{width: 60%;margin: auto;font-size: 1.5em;}
+td{border-bottom: 1px solid blue;}
+input{
+    width: 100px;
+}

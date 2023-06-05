@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lab1.RandomSelector</title>
+        <link rel="stylesheet"href="style.css">
+    </head>
+    <body>
+        <h1 style="text-align: center;" id="H1">Random晚餐產生器</h1>
+        <input style="text-align: center;" id = "sele" type="button" value="今天晚上吃什麼">
+        
+        <br><br><img id ="food" src="" height="500"  style="display:none;">
+        <div style= "width:300px;height:fill;border:3px #1b1a1a dashed;">
+            <br><input type="radio" name="dinner_type" value="1" id="tai" checked><b>台式晚餐</b>
+            <br><input type="radio" name="dinner_type" value="2" id="jap" unchecked><b>日式晚餐</b>
+            <br><input type="radio" name="dinner_type" value="3" id="other" unchecked><b>我的最愛(有彩蛋)</b>
+            <br>&nbsp;&nbsp;<input type="text" value="" placeholder="新增自選料理" name="favorite_input" id="Finput" style="display:none;" maxlength="10">
+            <br>&nbsp;&nbsp;<input type="submit" value="送出" id="Fsubmit" style="display:none;">
+            <ul>
+                <li id="set0">滷肉飯</li>
+                <li id="set1">水餃</li>
+                <li id="set2">牛肉麵</li>
+                <li id="set3">鼎泰豐</li>
+                <li id="set4"></li>
+                <li id="set5"></li>
+                <li id="set6"></li>
+                <li id="set7"></li>
+                <li id="set8"></li>
+                <li id="set9"></li>
+            </ul>
+        </div>
+
+        <br><font id="othername"  style="display:none;font-size:100px;">今天晚上吃什麼</font>
+        <!-- <script src = "https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <script src = "//unpkg.com/jquery"></script>
+        <script src = "dinterlist.js" asyncdefer></script>
+        <script src = "main.js" asyncdefer></script>
+    </body>
+</html>
