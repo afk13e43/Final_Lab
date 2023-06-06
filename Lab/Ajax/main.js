@@ -17,8 +17,11 @@ function loadServrData() {
     xmlHttpRequest.send();
     xmlHttpRequest.onreadystatechange = function () {
         if (xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == 200) {
-            showData.innerHTML = xmlHttpRequest.responseText;
-            thisButton.style.visibility = "hidden";
+            
+            var temp = xmlHttpRequest.responseText;
+            var temp1 =temp.split("\"");
+            var int2 =Math.floor(Math.random()*temp1.length);
+            showData.innerHTML= "    "+temp1[int2];
         }
     }
 }
